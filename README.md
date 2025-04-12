@@ -77,3 +77,75 @@ Impacto Esperado:
 * Reduzir erros e melhorar o controle dos pedidos e entregas;
 * Estimular o uso de soluções digitais em um contexto onde isso ainda é pouco explorado;
 * Valorizar o comércio local e incentivar outros empreendedores familiares a se digitalizarem
+
+*** 3 REFERÊNCIAS E INSPIRAÇÕES ***
+
+Quais soluções similares já existem?
+○ que pode ser aproveitado, melhorado ou
+evitado? 
+
+Referências e Inspirações:
+
+1. Catálogo no WhatsApp Business
+Pode ser aproveitado: A simplicidade e familiaridade com o WhatsApp, que já é muito usado
+em Loanda.
+Pode ser melhorado: Falta integração com pagamentos e gestão de pedidos.
+
+3. Mercado Livre / OLX Local
+Pode ser aproveitado: A ideia de classificar produtos, mostrar imagens e oferecer meios de
+pagamento.
+Pode ser melhorado: Criar algo mais voltado para o pequeno produtor rural/artesanal, com
+linguagem acessível.
+
+*** 4. ESCOPOS (DO PROJETO E FORA DO PROJETO) ***
+O que será entregue?
+O que não será feito nesta etapa?
+Inclui: funcionalidades, serviços, público-alvo, limites.
+Espaço para preencher:
+
+O que será entregue (Escopo do Projeto):
+
+* Plataforma digital simples e intuitiva, com:
+* Catálogo de produtos (artesanais e hortifrúti);
+* Sistema de pedidos via WhatsApp (com botão de "Comprar pelo WhatsApp");
+* Gestão básica de clientes (nome, contato, histórico de pedidos);
+* Painel administrativo para cadastro de produtos e visualização de vendas;
+* Integração com formas de pagamento online (ex: Pix ou link do Mercado Pago);
+
+* Treinamento inicial para uso da plataforma;
+* Interface adaptada para dispositivos móveis.
+
+Público-alvo: Sra. Lourdes e clientes das cidades próximas.
+
+O que não será feito nesta etapa (Fora do Escopo):
+
+* Aplicativo nativo para Android/iOS (será web responsiva);
+* Integrações com ERPs ou sistemas avançados de gestão;
+* Campanhas de marketing digital;
+* Expansão para marketplace ou vendas em grandes plataformas (ex: Mercado Livre);
+* Suporte técnico contínuo após a entrega (pode ser contratado à parte).
+
+*** 5. REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS ***
+
+Quais funções mínimas a solução precisa ter?
+Quais condições ou restrições são importantes (ex: acessibilidade, tempo de resposta,
+visual etc.)?
+• Espaço para preencher:
+
+## Requisitos Funcionais
+
+| ID  | Descrição                          |
+|-----|-------------------------------------|
+| RF1 | Catálogo de produtos                |
+| RF2 | Pagamento online                    |
+| RF3 | Gestão de clientes                  |
+| RF4 | Integração com WhatsApp             |
+
+## Requisitos Não Funcionais
+
+| ID   | Descrição                                                         |
+|------|-------------------------------------------------------------------|
+| RNF1 | Interface simples e intuitiva                                     |
+| RNF2 | Funciona bem em celular e com internet limitada                   |
+| RNF3 | Visual acessível e fácil de entender                              |
+
