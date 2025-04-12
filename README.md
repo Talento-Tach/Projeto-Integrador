@@ -81,11 +81,13 @@ Referências e Inspirações:
 1. Catálogo no WhatsApp Business
 Pode ser aproveitado: A simplicidade e familiaridade com o WhatsApp, que já é muito usado
 em Loanda.
+
 Pode ser melhorado: Falta integração com pagamentos e gestão de pedidos.
 
 3. Mercado Livre / OLX Local
 Pode ser aproveitado: A ideia de classificar produtos, mostrar imagens e oferecer meios de
 pagamento.
+
 Pode ser melhorado: Criar algo mais voltado para o pequeno produtor rural/artesanal, com
 linguagem acessível.
 
@@ -215,35 +217,36 @@ Espaço para preencher:
 
 Equipe e Responsabilidades:
 
-1. Coordenador do Projeto
-Responsável: [josé]
-Acompanhar cronograma e entregas;
-Fazer a ponte entre cliente e equipe técnica;
-Gerar relatórios de progresso.
+1. Coordenador do Projeto Responsável: [josé]
+   
+* Acompanhar cronograma e entregas;
+* Fazer a ponte entre cliente e equipe técnica;
+* Gerar relatórios de progresso.
 
-3. Desenvolvedor Front-end
-Responsável: [Rafael]
-Criar a interface da plataforma (catálogo, página de produto, contato via WhatsApp);
-Garantir responsividade e usabilidade.
+3. Desenvolvedor Front-end Responsável: [Rafael]
+* Criar a interface da plataforma (catálogo, página de produto, contato via WhatsApp);
+* Garantir responsividade e usabilidade.
 
-5. Desenvolvedor Back-end
-Responsável: [Gustavo ]
-Implementar funcionalidades de gestão de pedidos e clientes;
-Criar sistema de autenticação e banco de dados.
+5. Desenvolvedor Back-end Responsável: [Gustavo ]
+* Implementar funcionalidades de gestão de pedidos e clientes;
+* Criar sistema de autenticação e banco de dados.
 
-7. Designer UX/UI
-Responsável: [Caio]
-Desenvolver layout intuitivo e acessível para o público local;
-Criar identidade visual simples e amigável.
+7. Designer UX/UI Responsável: [Caio]
+* Desenvolver layout intuitivo e acessível para o público local;
+* Criar identidade visual simples e amigável.
 
-9. Treinamento e Suporte Inicial
-Responsável: [Gustavo]
-Capacitar a Sra. Lourdes no uso da plataforma;
-Disponibilizar material de apoio (vídeo/tutorial simples).
+9. Treinamento e Suporte Inicial Responsável: [Gustavo]
+* Capacitar a Sra. Lourdes no uso da plataforma;
+* Disponibilizar material de apoio (vídeo/tutorial simples).
 
 ---
 Acompanhamento Interno
+
 Reuniões semanais para alinhamento de progresso (online);
+
 Uso de ferramentas de gestão (Trello ou Notion);
+
 Atualizações de status enviadas por e-mail ou WhatsApp para a cliente;
+
 Validações parciais com a cliente (protótipo e versão beta).
+
