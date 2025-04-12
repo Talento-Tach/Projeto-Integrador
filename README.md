@@ -143,37 +143,44 @@ Justifique as escolhas.
 Ferramentas e Linguagens Utilizadas:
 
 * Flutter;
+
   Permite criar uma plataforma única que funciona tanto em dispositivos móveis (Android/iOS)
 quanto na versão web, utilizando uma única base de código. Ideal para quem quer
 escalabilidade e uniformidade nas plataformas.
 
 * Dart;
+
   A linguagem padrão do Flutter, otimizada para desenvolvimento rápido, com excelente
 desempenho. Dart é simples de aprender e trabalhar em conjunto com Flutter.
 
 * Firebase;
+
   Firebase oferece um backend sem servidor fácil de usar, com autenticação integrada, banco
 de dados em tempo real, hospedagem e notificações push. É ideal para projetos pequenos
 e médios, com baixo custo e escalabilidade.
 
 * Mercado Pago / PagSeguro;
+
   Plataformas seguras e amplamente utilizadas no Brasil, com fácil integração com Flutter,
 permitindo que a Sra. Lourdes receba pagamentos online de forma simples e segura.
 
 * WhatsApp API (ou links diretos);
+
   WhatsApp é o principal canal de comunicação da Sra. Lourdes, e a integração com o app
 facilita que o cliente envie seus pedidos diretamente para ela de forma simples.
 
 Metodologias Utilizada:
 * Agile (Scrum)
+
   Planejamento e organização das tarefas em sprints curtas e interações constantes
+
   Com Flutter, podemos desenvolver partes do sistema e entregá-las de forma incremental,
 ajustando conforme os feedbacks de Lourdes e dos clientes.
 
 *** 7. CRONOGRAMA DE EXECUÇÃO (SPRINTS) ***
  Quais são as principais etapas até desenvolvimento?
 Metas por semana ou por fase?
-/ Espaço para preencher:
+Espaço para preencher:
 
 |Etapa              | Meta da ResponsávelSemana  |
 |-------------------|----------------------------|
