@@ -187,7 +187,7 @@ permitindo que a Sra. Lourdes receba pagamentos online de forma simples e segura
 facilita que o cliente envie seus pedidos diretamente para ela de forma simples.
 
 Metodologias Utilizada:
-* Agile (Scrum)
+* Agil (Scrum)
 
   Planejamento e organização das tarefas em sprints curtas e interações constantes
 
