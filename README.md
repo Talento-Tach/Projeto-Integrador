@@ -10,22 +10,9 @@ Gustavo                            |-> https://github.com/
 Caio                               |-> https://github.com/
 ----------------------------------------------------------------------------
 
-***  Propósito do Sistema***
-
-O propósito do sistema é digitalizar e modernizar o processo de vendas do Armazém do Sítio, da Sra. Lourdes, por meio do desenvolvimento de uma plataforma digital simples, acessível e funcional, que permita:
-
-* Divulgar e organizar o catálogo de produtos (hortifrúti e artesanais),
-
-* Facilitar o atendimento e os pedidos dos clientes por meio da integração com o WhatsApp,
-
-* Oferecer opções de pagamento online seguras, como Pix e cartão,
-
-* E gerenciar os pedidos e dados dos clientes de forma prática, mesmo sem conhecimento técnico.
-
-O sistema tem como objetivo principal ampliar o alcance das vendas para cidades próximas de Loanda/PR, promovendo o crescimento do negócio familiar da Sra. Lourdes e facilitando o acesso dos consumidores locais a produtos frescos e artesanais por canais digitais simples e familiares.
 
 *** 1. PROBLEMA E CONTEXTO  ***
-Criar uma plataforma digital para o negócio da Sra. Lourdes, que inclua:
+  Criar uma plataforma digital para o negócio da Sra. Lourdes, que inclua:
 Catálogo de produtos,
 Pagamentos online,
 Gestão de clientes.
@@ -50,7 +37,7 @@ Senai e governos estaduais que oferecem suporte técnico e capacitação.
 
 *** 2 OBJETIVO DA SOLUÇÃO ***
 
-O que a equipe pretende alcançar com o
+ O que a equipe pretende alcançar com o
 projeto?
 Qual impacto esperado?
 Espaço para preencher: 
@@ -80,7 +67,7 @@ Impacto Esperado:
 
 *** 3 REFERÊNCIAS E INSPIRAÇÕES ***
 
-Quais soluções similares já existem?
+  Quais soluções similares já existem?
 ○ que pode ser aproveitado, melhorado ou
 evitado? 
 
@@ -98,7 +85,7 @@ Pode ser melhorado: Criar algo mais voltado para o pequeno produtor rural/artesa
 linguagem acessível.
 
 *** 4. ESCOPOS (DO PROJETO E FORA DO PROJETO) ***
-O que será entregue?
+  O que será entregue?
 O que não será feito nesta etapa?
 Inclui: funcionalidades, serviços, público-alvo, limites.
 Espaço para preencher:
@@ -127,7 +114,7 @@ O que não será feito nesta etapa (Fora do Escopo):
 
 *** 5. REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS ***
 
-Quais funções mínimas a solução precisa ter?
+ Quais funções mínimas a solução precisa ter?
 Quais condições ou restrições são importantes (ex: acessibilidade, tempo de resposta,
 visual etc.)?
 • Espaço para preencher:
@@ -150,7 +137,7 @@ visual etc.)?
 | RNF3 | Visual acessível e fácil de entender                              |
 
 *** 6 TECNOLOGIAS E METODOLOGIAS ***
-Quais ferramentas, linguagens e métodos serão usados?
+ Quais ferramentas, linguagens e métodos serão usados?
 Justifique as escolhas.
 
 Ferramentas e Linguagens Utilizadas:
@@ -179,7 +166,7 @@ Com Flutter, podemos desenvolver partes do sistema e entregá-las de forma incre
 ajustando conforme os feedbacks de Lourdes e dos clientes.
 
 *** 7. CRONOGRAMA DE EXECUÇÃO (SPRINTS) ***
-Quais são as principais etapas até desenvolvimento?
+ Quais são as principais etapas até desenvolvimento?
 Metas por semana ou por fase?
 / Espaço para preencher:
 
@@ -188,3 +175,43 @@ Metas por semana ou por fase?
 |Sprint 1 (Semana 1)| PLANEJAMENTO E IDEIAS      |
 |Sprint 2 (Semana 2)| CONSTRUÇÃO DO SITE         |
 |Sprint 3 (Semana 3)| TESTES E ENTREGA           |
+
+*** 8. EQUIPE E RESPONSABILIDADES ***
+ Quem fará quê?
+Como será o acompanhamento interno?
+Espaço para preencher:
+
+
+Equipe e Responsabilidades
+1. Coordenador do Projeto
+Responsável: [josé]
+Acompanhar cronograma e entregas;
+Fazer a ponte entre cliente e equipe técnica;
+Gerar relatórios de progresso.
+
+3. Desenvolvedor Front-end
+Responsável: [Rafael]
+Criar a interface da plataforma (catálogo, página de produto, contato via WhatsApp);
+Garantir responsividade e usabilidade.
+
+5. Desenvolvedor Back-end
+Responsável: [Gustavo ]
+Implementar funcionalidades de gestão de pedidos e clientes;
+Criar sistema de autenticação e banco de dados.
+
+7. Designer UX/UI
+Responsável: [Caio]
+Desenvolver layout intuitivo e acessível para o público local;
+Criar identidade visual simples e amigável.
+
+9. Treinamento e Suporte Inicial
+Responsável: [Gustavo]
+Capacitar a Sra. Lourdes no uso da plataforma;
+Disponibilizar material de apoio (vídeo/tutorial simples).
+
+---
+Acompanhamento Interno
+Reuniões semanais para alinhamento de progresso (online);
+Uso de ferramentas de gestão (Trello ou Notion);
+Atualizações de status enviadas por e-mail ou WhatsApp para a cliente;
+Validações parciais com a cliente (protótipo e versão beta).
