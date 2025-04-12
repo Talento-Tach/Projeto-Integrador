@@ -12,6 +12,7 @@ Caio                               |-> https://github.com/
 
 
 *** 1. PROBLEMA E CONTEXTO  ***
+
   Criar uma plataforma digital para o negócio da Sra. Lourdes, que inclua:
 Catálogo de produtos,
 Pagamentos online,
@@ -85,6 +86,7 @@ Pode ser melhorado: Criar algo mais voltado para o pequeno produtor rural/artesa
 linguagem acessível.
 
 *** 4. ESCOPOS (DO PROJETO E FORA DO PROJETO) ***
+
   O que será entregue?
 O que não será feito nesta etapa?
 Inclui: funcionalidades, serviços, público-alvo, limites.
@@ -137,6 +139,7 @@ visual etc.)?
 | RNF3 | Visual acessível e fácil de entender                              |
 
 *** 6 TECNOLOGIAS E METODOLOGIAS ***
+
  Quais ferramentas, linguagens e métodos serão usados?
 Justifique as escolhas.
 
@@ -178,6 +181,7 @@ Metodologias Utilizada:
 ajustando conforme os feedbacks de Lourdes e dos clientes.
 
 *** 7. CRONOGRAMA DE EXECUÇÃO (SPRINTS) ***
+
  Quais são as principais etapas até desenvolvimento?
 Metas por semana ou por fase?
 Espaço para preencher:
@@ -189,6 +193,7 @@ Espaço para preencher:
 |Sprint 3 (Semana 3)| TESTES E ENTREGA           |
 
 *** 8. EQUIPE E RESPONSABILIDADES ***
+
  Quem fará quê?
 Como será o acompanhamento interno?
 Espaço para preencher:
