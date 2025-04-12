@@ -93,6 +93,8 @@ linguagem acessível.
 
 
 
+
+
 *** 4. ESCOPOS (DO PROJETO E FORA DO PROJETO) ***
 
   O que será entregue?
