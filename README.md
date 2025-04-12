@@ -36,6 +36,7 @@ pequenos produtores e mercados locais (ex: App "Feira do Produtor").
   4. Programas de incentivo à digitalização de pequenos negócios: iniciativas do Sebrae,
 Senai e governos estaduais que oferecem suporte técnico e capacitação.
 
+
 *** 2 OBJETIVO DA SOLUÇÃO ***
 
  O que a equipe pretende alcançar com o
@@ -66,6 +67,7 @@ Impacto Esperado:
 * Estimular o uso de soluções digitais em um contexto onde isso ainda é pouco explorado;
 * Valorizar o comércio local e incentivar outros empreendedores familiares a se digitalizarem
 
+
 *** 3 REFERÊNCIAS E INSPIRAÇÕES ***
 
   Quais soluções similares já existem?
@@ -84,6 +86,7 @@ Pode ser aproveitado: A ideia de classificar produtos, mostrar imagens e oferece
 pagamento.
 Pode ser melhorado: Criar algo mais voltado para o pequeno produtor rural/artesanal, com
 linguagem acessível.
+
 
 *** 4. ESCOPOS (DO PROJETO E FORA DO PROJETO) ***
 
@@ -114,6 +117,7 @@ O que não será feito nesta etapa (Fora do Escopo):
 * Expansão para marketplace ou vendas em grandes plataformas (ex: Mercado Livre);
 * Suporte técnico contínuo após a entrega (pode ser contratado à parte).
 
+
 *** 5. REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS ***
 
  Quais funções mínimas a solução precisa ter?
@@ -137,6 +141,7 @@ visual etc.)?
 | RNF1 | Interface simples e intuitiva                                     |
 | RNF2 | Funciona bem em celular e com internet limitada                   |
 | RNF3 | Visual acessível e fácil de entender                              |
+
 
 *** 6 TECNOLOGIAS E METODOLOGIAS ***
 
@@ -180,6 +185,7 @@ Metodologias Utilizada:
   Com Flutter, podemos desenvolver partes do sistema e entregá-las de forma incremental,
 ajustando conforme os feedbacks de Lourdes e dos clientes.
 
+
 *** 7. CRONOGRAMA DE EXECUÇÃO (SPRINTS) ***
 
  Quais são as principais etapas até desenvolvimento?
@@ -191,6 +197,7 @@ Espaço para preencher:
 |Sprint 1 (Semana 1)| PLANEJAMENTO E IDEIAS      |
 |Sprint 2 (Semana 2)| CONSTRUÇÃO DO SITE         |
 |Sprint 3 (Semana 3)| TESTES E ENTREGA           |
+
 
 *** 8. EQUIPE E RESPONSABILIDADES ***
 
