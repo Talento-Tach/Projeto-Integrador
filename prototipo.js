@@ -1,13 +1,13 @@
 
 let produtos = [
-    { nome: 'Maçã', preco: 4.99, tipo: 'Fruta', imagemUrl: 'imagens/maça.jpg' },
-    { nome: 'Banana', preco: 3.49, tipo: 'Fruta', imagemUrl: 'imagens/banana.jpg' },
-    { nome: 'Alface', preco: 2.99, tipo: 'Legume', imagemUrl: 'https://i.imgur.com/3l6Rgnf.png' },
-    { nome: 'Tomate', preco: 5.49, tipo: 'Legume', imagemUrl: 'https://i.imgur.com/x4g8LPV.png' },
-    { nome: 'Abacaxi', preco: 7.99, tipo: 'Fruta', imagemUrl: 'https://i.imgur.com/4z1F6K4.png' },
-    { nome: 'Uva', preco: 6.49, tipo: 'Fruta', imagemUrl: 'https://i.imgur.com/VnFBY1h.png' },
-    { nome: 'Manga', preco: 5.99, tipo: 'Fruta', imagemUrl: 'https://i.imgur.com/OM6BYKU.png' },
-    { nome: 'Cenoura', preco: 4.29, tipo: 'Legume', imagemUrl: 'https://i.imgur.com/5eVQnVi.png' }
+    { nome: 'Maçã', preco: 4.99, tipo: 'Fruta'},
+    { nome: 'Banana', preco: 3.49, tipo: 'Fruta'},
+    { nome: 'Alface', preco: 2.99, tipo: 'Legume'},
+    { nome: 'Tomate', preco: 5.49, tipo: 'Legume'},
+    { nome: 'Abacaxi', preco: 7.99, tipo: 'Fruta'},
+    { nome: 'Uva', preco: 6.49, tipo: 'Fruta'},
+    { nome: 'Manga', preco: 5.99, tipo: 'Fruta'},
+    { nome: 'Cenoura', preco: 4.29, tipo: 'Legume'}
   ];
   
   let carrinho = [];
