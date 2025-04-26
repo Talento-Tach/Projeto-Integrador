@@ -5,9 +5,9 @@ Olá! Este repositório faz parte do projeto do curso Talento Tech Parana - Cida
 NOME                               |GitHub
 -----------------------------------|----------------------------------------
 José                               |-> https://github.com/
-Rafael Tomé da Silva               |-> https://github.com/RafaelTomee
+Rafael                             |-> https://github.com/RafaelTomee
 Gustavo                            |-> https://github.com/
-Caio                               |-> https://github.com/
+Caio                               |-> https://github.com/caiogato5567
 ----------------------------------------------------------------------------
 
 
