@@ -11,244 +11,178 @@ Caio                               |-> https://github.com/
 ----------------------------------------------------------------------------
 
 
-*** 1. PROBLEMA E CONTEXTO  ***
+📌 1. PROBLEMA E CONTEXTO
+Descrição do Problema:
+Criar uma plataforma digital para modernizar o negócio da Sra. Lourdes, incluindo:
 
-  Criar uma plataforma digital para o negócio da Sra. Lourdes, que inclua:
-Catálogo de produtos,
-Pagamentos online,
-Gestão de clientes.
-Dados e evidências que justificam o problema:
+Catálogo de produtos
 
-  1. População local: 18 mil habitantes (cidade de pequeno porte); 
-  2. 70% dos negócios são familiares: o que indica baixa digitalização e gestão informal;
-  3. Acesso à internet em 68% dos domicílios: há potencial para uso de plataformas digitais,
-mas ainda com limitações de alcance.
+Pagamentos online
 
-O que já existe sobre isso (pesquisa rápida):
+Gestão de clientes
 
-  1. WhatsApp Business: ferramenta popular e de fácil uso por pequenos empreendedores.
-Permite catálogo, mensagens automáticas, e integração com pagamentos via WhatsApp
-Pay.
-  2. Plataformas como Shopify, Loja Integrada e Nuvemshop: oferecem soluções prontas para
-e-commerce, mas exigem algum nível de conhecimento técnico ou suporte externo.
-  3. Aplicativos de delivery rural ou mercados locais: soluções em crescimento, voltadas para
-pequenos produtores e mercados locais (ex: App "Feira do Produtor").
-  4. Programas de incentivo à digitalização de pequenos negócios: iniciativas do Sebrae,
-Senai e governos estaduais que oferecem suporte técnico e capacitação.
+Dados e Evidências que Justificam o Problema:
 
+População local: 18 mil habitantes (cidade de pequeno porte);
 
+70% dos negócios são familiares: indica baixa digitalização e gestão informal;
 
-*** 2 OBJETIVO DA SOLUÇÃO ***
+Acesso à internet em 68% dos domicílios: mostra potencial para uso de plataformas digitais, ainda que com algumas limitações.
 
- O que a equipe pretende alcançar com o
-projeto?
-Qual impacto esperado?
-Espaço para preencher: 
+O que já existe sobre isso (Pesquisa Rápida):
 
-Objetivo da Solução
+WhatsApp Business: ferramenta popular entre pequenos empreendedores; permite catálogo, mensagens automáticas e integração com pagamentos via WhatsApp Pay.
 
-A equipe pretende desenvolver uma plataforma digital simples, acessível e eficiente para
-modernizar o Armazém do Sítio, da Sra. Lourdes. 
-O objetivo é:
+Plataformas como Shopify, Loja Integrada e Nuvemshop: oferecem soluções prontas para e-commerce, mas exigem conhecimento técnico ou suporte externo.
 
-  Oferecer um catálogo digital de produtos, com integração ao WhatsApp para facilitar
-pedidos;
-* Permitir vendas online com pagamentos via Pix e cartão;
-* Auxiliar na organização do negócio, com gestão básica de clientes e pedidos;
-* Ampliar o alcance das vendas, atendendo não só a cidade de Loanda, mas também cidades
-vizinhas;
-* Incluir o negócio no meio digital, respeitando o perfil do público local, com pouco acesso à
-tecnologia.
+Aplicativos de delivery rural e mercados locais (ex.: "Feira do Produtor"): soluções que crescem entre pequenos produtores.
 
-Impacto Esperado:  
+Programas de incentivo à digitalização (Sebrae, Senai, governos estaduais): oferecem suporte técnico e capacitação.
 
-* Facilitar o acesso dos clientes aos produtos, mesmo sem irem até o armazém;
-* Aumentar o faturamento com vendas para outras cidades;
-* Reduzir erros e melhorar o controle dos pedidos e entregas;
-* Estimular o uso de soluções digitais em um contexto onde isso ainda é pouco explorado;
-* Valorizar o comércio local e incentivar outros empreendedores familiares a se digitalizarem
+🎯 2. OBJETIVO DA SOLUÇÃO
+Objetivo Principal:
+Desenvolver uma plataforma digital simples, acessível e eficiente para modernizar o Armazém do Sítio da Sra. Lourdes.
 
+Objetivos Específicos:
 
+Oferecer um catálogo de produtos, com integração ao WhatsApp para facilitar pedidos.
 
-*** 3 REFERÊNCIAS E INSPIRAÇÕES ***
+Permitir vendas online, com pagamento via Pix e cartão.
 
-  Quais soluções similares já existem?
-○ que pode ser aproveitado, melhorado ou
-evitado? 
+Auxiliar na organização do negócio com gestão de clientes e pedidos.
 
-Referências e Inspirações:
+Ampliar o alcance das vendas para cidades vizinhas.
 
-1. Catálogo no WhatsApp Business
-Pode ser aproveitado: A simplicidade e familiaridade com o WhatsApp, que já é muito usado
-em Loanda.
+Inserir o negócio no meio digital, respeitando o perfil do público local.
 
-Pode ser melhorado: Falta integração com pagamentos e gestão de pedidos.
+Impacto Esperado:
 
-3. Mercado Livre / OLX Local
-Pode ser aproveitado: A ideia de classificar produtos, mostrar imagens e oferecer meios de
-pagamento.
+Facilitar o acesso dos clientes aos produtos.
 
-Pode ser melhorado: Criar algo mais voltado para o pequeno produtor rural/artesanal, com
-linguagem acessível.
+Aumentar o faturamento e as vendas regionais.
 
+Melhorar o controle de pedidos e entregas.
 
+Estimular a digitalização de outros pequenos empreendedores locais.
 
+📚 3. REFERÊNCIAS E INSPIRAÇÕES
+Soluções Similares e Lições:
 
+Catálogo no WhatsApp Business:
 
-*** 4. ESCOPOS (DO PROJETO E FORA DO PROJETO) ***
+Aproveitar: simplicidade e popularidade do WhatsApp.
 
-  O que será entregue?
-O que não será feito nesta etapa?
-Inclui: funcionalidades, serviços, público-alvo, limites.
-Espaço para preencher:
+Melhorar: integrar pagamentos e gestão de pedidos.
 
-O que será entregue (Escopo do Projeto):
+Mercado Livre / OLX Local:
 
-* Plataforma digital simples e intuitiva, com:
-* Catálogo de produtos (artesanais e hortifrúti);
-* Sistema de pedidos via WhatsApp (com botão de "Comprar pelo WhatsApp");
-* Gestão básica de clientes (nome, contato, histórico de pedidos);
-* Painel administrativo para cadastro de produtos e visualização de vendas;
-* Integração com formas de pagamento online (ex: Pix ou link do Mercado Pago);
+Aproveitar: estrutura de catálogo de produtos com imagens e meios de pagamento.
 
-* Treinamento inicial para uso da plataforma;
-* Interface adaptada para dispositivos móveis.
+Melhorar: adaptar para pequenos produtores e uma linguagem acessível.
 
-Público-alvo: Sra. Lourdes e clientes das cidades próximas.
+📋 4. ESCOPO DO PROJETO
+Dentro do Escopo:
 
-O que não será feito nesta etapa (Fora do Escopo):
+Plataforma web responsiva com:
 
-* Aplicativo nativo para Android/iOS (será web responsiva);
-* Integrações com ERPs ou sistemas avançados de gestão;
-* Campanhas de marketing digital;
-* Expansão para marketplace ou vendas em grandes plataformas (ex: Mercado Livre);
-* Suporte técnico contínuo após a entrega (pode ser contratado à parte).
+Catálogo de produtos (artesanais e hortifrúti);
 
+Sistema de pedidos via botão "Comprar pelo WhatsApp";
 
+Gestão básica de clientes (nome, contato, histórico de pedidos);
 
-*** 5. REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS ***
+Painel administrativo para cadastro de produtos e visualização de vendas;
 
- Quais funções mínimas a solução precisa ter?
-Quais condições ou restrições são importantes (ex: acessibilidade, tempo de resposta,
-visual etc.)?
-• Espaço para preencher:
+Integração com pagamentos online (Pix e Mercado Pago);
 
-## Requisitos Funcionais
+Treinamento inicial para uso da plataforma;
 
-| ID  | Descrição                          |
-|-----|-------------------------------------|
-| RF1 | Catálogo de produtos                |
-| RF2 | Pagamento online                    |
-| RF3 | Gestão de clientes                  |
-| RF4 | Integração com WhatsApp             |
+Interface adaptada para celulares.
 
-## Requisitos Não Funcionais
+Fora do Escopo:
 
-| ID   | Descrição                                                         |
-|------|-------------------------------------------------------------------|
-| RNF1 | Interface simples e intuitiva                                     |
-| RNF2 | Funciona bem em celular e com internet limitada                   |
-| RNF3 | Visual acessível e fácil de entender                              |
+Aplicativo nativo (Android/iOS);
 
+Integrações com ERPs ou sistemas avançados;
 
+Campanhas de marketing digital;
 
-*** 6 TECNOLOGIAS E METODOLOGIAS ***
+Vendas em marketplaces de grande porte (ex: Mercado Livre);
 
- Quais ferramentas, linguagens e métodos serão usados?
-Justifique as escolhas.
+Suporte técnico contínuo (pode ser contratado separadamente).
 
-Ferramentas e Linguagens Utilizadas:
+✅ 5. REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS
+Requisitos Funcionais (RF):
 
-* Flutter;
 
-  Permite criar uma plataforma única que funciona tanto em dispositivos móveis (Android/iOS)
-quanto na versão web, utilizando uma única base de código. Ideal para quem quer
-escalabilidade e uniformidade nas plataformas.
+ID	Descrição
+RF1	Catálogo de produtos
+RF2	Pagamento online
+RF3	Gestão de clientes
+RF4	Integração com WhatsApp
+Requisitos Não Funcionais (RNF):
 
-* Dart;
 
-  A linguagem padrão do Flutter, otimizada para desenvolvimento rápido, com excelente
-desempenho. Dart é simples de aprender e trabalhar em conjunto com Flutter.
+ID	Descrição
+RNF1	Interface simples e intuitiva
+RNF2	Funcionar bem em celulares e com internet limitada
+RNF3	Visual acessível e fácil de entender
+🛠️ 6. TECNOLOGIAS E METODOLOGIAS
+Ferramentas e Linguagens:
 
-* Firebase;
+Flutter: desenvolvimento multiplataforma (web e mobile) com única base de código.
 
-  Firebase oferece um backend sem servidor fácil de usar, com autenticação integrada, banco
-de dados em tempo real, hospedagem e notificações push. É ideal para projetos pequenos
-e médios, com baixo custo e escalabilidade.
+Dart: linguagem eficiente e compatível com Flutter.
 
-* Mercado Pago / PagSeguro;
+Firebase: autenticação, banco de dados em tempo real, hospedagem.
 
-  Plataformas seguras e amplamente utilizadas no Brasil, com fácil integração com Flutter,
-permitindo que a Sra. Lourdes receba pagamentos online de forma simples e segura.
+Mercado Pago/PagSeguro: integração de pagamentos segura e prática.
 
-* WhatsApp API (ou links diretos);
+WhatsApp API (ou links diretos): comunicação prática com clientes.
 
-  WhatsApp é o principal canal de comunicação da Sra. Lourdes, e a integração com o app
-facilita que o cliente envie seus pedidos diretamente para ela de forma simples.
+Metodologia Utilizada:
 
-Metodologias Utilizada:
-* Agil (Scrum)
+Ágil (Scrum):
 
-  Planejamento e organização das tarefas em sprints curtas e interações constantes
+Organização de tarefas em sprints curtas;
 
-  Com Flutter, podemos desenvolver partes do sistema e entregá-las de forma incremental,
-ajustando conforme os feedbacks de Lourdes e dos clientes.
+Entregas incrementais;
 
+Feedback contínuo da cliente.
 
+🗓️ 7. CRONOGRAMA DE EXECUÇÃO (SPRINTS)
 
-*** 7. CRONOGRAMA DE EXECUÇÃO (SPRINTS) ***
+Etapa	Meta	Semana
+Sprint 1	Planejamento e Ideação	Semana 1
+Sprint 2	Construção da Plataforma	Semana 2
+Sprint 3	Testes e Entrega Final	Semana 3
+👥 8. EQUIPE E RESPONSABILIDADES
+Funções e Responsáveis:
 
- Quais são as principais etapas até desenvolvimento?
-Metas por semana ou por fase?
-Espaço para preencher:
+Coordenador do Projeto: [José]
+Acompanhar o cronograma, comunicação com a cliente, e relatórios de progresso.
 
-|Etapa              | Meta da ResponsávelSemana  |
-|-------------------|----------------------------|
-|Sprint 1 (Semana 1)| PLANEJAMENTO E IDEIAS      |
-|Sprint 2 (Semana 2)| CONSTRUÇÃO DO SITE         |
-|Sprint 3 (Semana 3)| TESTES E ENTREGA           |
+Desenvolvedor Front-end: [Rafael]
+Desenvolvimento da interface e responsividade da plataforma.
 
+Desenvolvedor Back-end: [Gustavo]
+Implementação da gestão de pedidos, clientes e autenticação.
 
+Designer UX/UI: [Caio]
+Desenvolvimento de layout e identidade visual.
 
-*** 8. EQUIPE E RESPONSABILIDADES ***
+Treinamento e Suporte Inicial: [Gustavo]
+Treinamento da Sra. Lourdes e criação de materiais de apoio.
 
- Quem fará quê?
-Como será o acompanhamento interno?
-Espaço para preencher:
+Acompanhamento Interno:
 
+Reuniões semanais de alinhamento online.
 
-Equipe e Responsabilidades:
+Uso de ferramentas de gestão (Trello ou Notion).
 
-1. Coordenador do Projeto Responsável: [josé]
-   
-* Acompanhar cronograma e entregas;
-* Fazer a ponte entre cliente e equipe técnica;
-* Gerar relatórios de progresso.
+Atualizações semanais enviadas por e-mail ou WhatsApp.
 
-3. Desenvolvedor Front-end Responsável: [Rafael]
-* Criar a interface da plataforma (catálogo, página de produto, contato via WhatsApp);
-* Garantir responsividade e usabilidade.
+Validações parciais (protótipo e beta) com a cliente.
 
-5. Desenvolvedor Back-end Responsável: [Gustavo ]
-* Implementar funcionalidades de gestão de pedidos e clientes;
-* Criar sistema de autenticação e banco de dados.
 
-7. Designer UX/UI Responsável: [Caio]
-* Desenvolver layout intuitivo e acessível para o público local;
-* Criar identidade visual simples e amigável.
-
-9. Treinamento e Suporte Inicial Responsável: [Gustavo]
-* Capacitar a Sra. Lourdes no uso da plataforma;
-* Disponibilizar material de apoio (vídeo/tutorial simples).
-
----
-Acompanhamento Interno
-
-Reuniões semanais para alinhamento de progresso (online);
-
-Uso de ferramentas de gestão (Trello ou Notion);
-
-Atualizações de status enviadas por e-mail ou WhatsApp para a cliente;
-
-Validações parciais com a cliente (protótipo e versão beta).
 
