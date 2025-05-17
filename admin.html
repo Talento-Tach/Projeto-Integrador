@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Painel da Dona Lourdes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+  <header>
+    Painel Administrativo
+  </header>
+
+  <main>
+    <div id="login">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" placeholder="Digite a senha" />
+      <button onclick="verificarSenha()">Entrar</button>
+    </div>
+
+    <div id="painel" style="display: none;">
+      <section id="formulario-adicionar">
+        <h2>Adicionar Produto</h2>
+        <form id="formProduto">
+          <input type="text" id="nome" placeholder="Nome do produto" required />
+          <input type="text" id="preco" placeholder="Preço (ex: R$ 5,00)" required />
+          <input type="text" id="imagem" placeholder="URL da imagem" required />
+          <button type="submit">Adicionar</button>
+        </form>
+        <p id="msg"></p>
+      </section>
+
+      <section id="produtos-cadastrados">
+        <h2>Produtos cadastrados</h2>
+        <div class="painel-produtos" id="listaProdutos"></div>
+      </section>
+
+      
+    </div>
+    <a href="index.html" class="btn-voltar">← Voltar para a loja</a>
+</main>
+
+  <script>
+    const produtosFixos = [
+    //   { id: 1, nome: "Alface", preco: "R$ 2,50", imagem: "img/alface.jpg" },
+    //   { id: 2, nome: "Tomate", preco: "R$ 4,00", imagem: "img/tomate.jpg" },
+    //   { id: 3, nome: "Ovos (dúzia)", preco: "R$ 7,00", imagem: "img/ovos.jpg" },
+    //   { id: 4, nome: "Queijo artesanal", preco: "R$ 15,00", imagem: "img/queijo.jpg" }
+    ];
+
+    function verificarSenha() {
+      const senha = document.getElementById("senha").value;
+      if (senha === "1234") {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("painel").style.display = "block";
+        mostrarProdutos();
+      } else {
+        alert("Senha incorreta!");
+      }
+    }
+
+    document.getElementById("formProduto").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const nome = document.getElementById("nome").value.trim();
+      const preco = document.getElementById("preco").value.trim();
+      const imagem = document.getElementById("imagem").value.trim();
+
+      if (!nome || !preco || !imagem) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      const novoProduto = { id: Date.now(), nome, preco, imagem };
+
+      const produtosCustom = JSON.parse(localStorage.getItem("produtosCustom")) || [];
+      produtosCustom.push(novoProduto);
+      localStorage.setItem("produtosCustom", JSON.stringify(produtosCustom));
+
+      document.getElementById("msg").textContent = "Produto adicionado com sucesso!";
+      this.reset();
+      mostrarProdutos();
+    });
+
+    function removerProduto(id) {
+      let produtosCustom = JSON.parse(localStorage.getItem("produtosCustom")) || [];
+      produtosCustom = produtosCustom.filter(p => p.id !== id);
+      localStorage.setItem("produtosCustom", JSON.stringify(produtosCustom));
+      mostrarProdutos();
+    }
+
+    function mostrarProdutos() {
+      const container = document.getElementById("listaProdutos");
+      container.innerHTML = "";
+
+      const produtosCustom = JSON.parse(localStorage.getItem("produtosCustom")) || [];
+      const todos = produtosFixos.concat(produtosCustom);
+
+      todos.forEach(prod => {
+        const card = document.createElement("div");
+        card.className = "produto";
+        card.innerHTML = `
+          <img src="${prod.imagem}" alt="${prod.nome}">
+          <h4>${prod.nome}</h4>
+          <p>${prod.preco}</p>
+        `;
+
+        if (!produtosFixos.find(p => p.id === prod.id)) {
+          const btn = document.createElement("button");
+          btn.textContent = "Remover";
+          btn.onclick = () => removerProduto(prod.id);
+          card.appendChild(btn);
+        }
+
+        container.appendChild(card);
+      });
+    }
+  </script>
+</body>
+
+</html>
