@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pagamento - Armazém da Sra. Lourdes</title>
+  <link rel="stylesheet" href="css/pagamento.css" />
+  <style>
+    /* Se quiser, copie seu pagamento.css aqui ou mantenha separado */
+
+    /* Exemplo rápido pra esconder/mostrar containers */
+    .pagamento-opcao {
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #qrPix {
+      text-align: center;
+    }
+
+    #qrPix img {
+      max-width: 200px;
+      margin: 10px auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Área de Pagamento</h1>
+  </header>
+
+  <div class="resumo pagamento-opcao">
+    <h3>Resumo do Pedido:</h3>
+    <ul id="resumoCarrinho" class="resumo-lista"></ul>
+    <p class="total" id="valorTotal"></p>
+  </div>
+
+  <div class="pagamento-opcao">
+    <h3>Escolha a forma de pagamento:</h3>
+    <label><input type="radio" name="formaPagamento" value="pix" checked /> Pix</label>
+    <label><input type="radio" name="formaPagamento" value="cartao" /> Cartão de Crédito</label>
+
+  </div>
+
+  <div id="containerPix" class="pagamento-opcao">
+    <h4>Pagamento via Pix</h4>
+    <p>Escaneie o QR Code abaixo para pagar:</p>
+    <div id="qrPix">
+      <!-- Coloque aqui o QR Code da sua chave Pix -->
+      <img src="img/Captura de tela 2025-05-16 002332.png" alt="QR Code Pix" />
+    </div>
+    <button id="btnPix" style="background-color: #3D734A; color: white; border: none; padding: 12px; border-radius: 25px; width: 100%; font-weight: bold; cursor: pointer;">Confirmar pagamento via Pix</button>
+  </div>
+
+  <form id="formPagamento" class="pagamento-opcao hidden">
+    <h4>Pagamento via Cartão</h4>
+    <label>Nome no cartão:</label>
+    <input type="text" required />
+
+    <label>Número do cartão:</label>
+    <input type="text" required maxlength="19" placeholder="1234 5678 9012 3456" />
+
+    <label>Data de validade:</label>
+    <input type="month" required />
+
+    <label>CVV:</label>
+    <input type="text" required maxlength="3" placeholder="123" />
+
+    <button type="submit">Pagar</button>
+  </form>
+
+  <a href="index.html" class="voltar-btn">← Voltar para a loja</a>
+
+  <script>
+    // Pega carrinho do localStorage e mostra resumo
+    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    const lista = document.getElementById("resumoCarrinho");
+    const totalElem = document.getElementById("valorTotal");
+
+    let total = 0;
+
+    carrinho.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = `${item.nome} - ${item.preco}`;
+      lista.appendChild(li);
+
+      const precoNumerico = parseFloat(item.preco.replace("R$", "").replace(",", "."));
+      total += precoNumerico;
+    });
+
+    totalElem.textContent = `Total: R$ ${total.toFixed(2).replace(".", ",")}`;
+
+    // Mostrar container certo conforme forma de pagamento selecionada
+    const radios = document.querySelectorAll('input[name="formaPagamento"]');
+    const containerPix = document.getElementById("containerPix");
+    const formPagamento = document.getElementById("formPagamento");
+
+    radios.forEach(radio => {
+      radio.addEventListener("change", () => {
+        if (radio.value === "pix" && radio.checked) {
+          containerPix.classList.remove("hidden");
+          formPagamento.classList.add("hidden");
+        }
+        if (radio.value === "cartao" && radio.checked) {
+          containerPix.classList.add("hidden");
+          formPagamento.classList.remove("hidden");
+        }
+      });
+    });
+
+    // Botão pagamento Pix
+    document.getElementById("btnPix").addEventListener("click", () => {
+      alert("Pagamento via Pix confirmado! Obrigado pela compra 😊");
+      localStorage.removeItem("carrinho");
+      window.location.href = "index.html";
+    });
+
+    // Formulário pagamento cartão
+    formPagamento.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Pagamento via cartão realizado com sucesso! Obrigado pela compra 😊");
+      localStorage.removeItem("carrinho");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
