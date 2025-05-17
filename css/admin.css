@@ -1,0 +1,253 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #9CC8D9;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #3D734A;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+#login,
+#painel {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.1);
+  max-width: 480px;
+  width: 100%;
+}
+
+#login label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+#login input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1.5px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline-offset: 2px;
+}
+
+#login input[type="password"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+#login button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px 0;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #3E8C51;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login button:hover {
+  background-color: #3E8C51;
+}
+
+/* Formulário do painel */
+
+#painel h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #3E8C51;
+  padding-bottom: 8px;
+}
+
+#formProduto input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1.5px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#formProduto input:focus {
+  border-color: #3E8C51;
+  outline: none;
+}
+
+#formProduto button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #3E8C51;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#formProduto button:hover {
+  background-color: #3E8C51;
+}
+
+#msg {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #3E8C51;
+  min-height: 20px;
+}
+
+/* Lista de produtos */
+
+#produtos-cadastrados h2 {
+  margin-top: 0;
+}
+
+.painel-produtos {
+  /* max-height: 500px; altura fixa máxima */
+  /* overflow-y: visible;  ativa scroll vertical quando passar do limite */
+  padding-right: 10px; /* para não cortar o scroll */
+  /* já mantém grid, gap, etc */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+#painel {
+  max-width: 1000px; /* aumente para mais largura */
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.1);
+  
+  /* max-height: none;
+  overflow: visible; */
+}
+
+.painel-produtos .produto {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgb(0 0 0 / 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.painel-produtos .produto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgb(0 0 0 / 0.15);
+}
+
+.painel-produtos img {
+  width: 100%;
+  height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.painel-produtos .produto:hover img {
+  transform: scale(1.05);
+}
+
+.painel-produtos h4 {
+  margin: 10px 0 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.painel-produtos p {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.painel-produtos button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.painel-produtos button:hover {
+  background-color: #d32f2f;
+}
+
+/* Botão voltar */
+
+.btn-voltar {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #3E8C51;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #3E8C51;
+}
+
+
+
+/* Responsividade */
+
+@media (max-width: 650px) {
+  main {
+    padding: 20px;
+  }
+
+  #login,
+  #painel {
+    max-width: 100%;
+    width: 100%;
+  }
+}
