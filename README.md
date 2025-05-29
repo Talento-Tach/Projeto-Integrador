@@ -130,13 +130,13 @@ RNF3	Visual acessível e fácil de entender
 🛠️ 6. TECNOLOGIAS E METODOLOGIAS
 Ferramentas e Linguagens:
 
-Flutter: desenvolvimento multiplataforma (web e mobile) com única base de código.
++HTML, CSS, JavaScript, Bootstrap
 
-Dart: linguagem eficiente e compatível com Flutter.
++ localStorage
 
-Firebase: autenticação, banco de dados em tempo real, hospedagem.
++ Pagamento simulado via Pix/cartão 
 
-Mercado Pago/PagSeguro: integração de pagamentos segura e prática.
+
 
 WhatsApp API (ou links diretos): comunicação prática com clientes.
 
@@ -183,6 +183,5 @@ Uso de ferramentas de gestão (Trello ou Notion).
 Atualizações semanais enviadas por e-mail ou WhatsApp.
 
 Validações parciais (protótipo e beta) com a cliente.
-
 
 
