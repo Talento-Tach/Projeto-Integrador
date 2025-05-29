@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-white py-2 fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center me-4" href="#">
+                    <img src="img/salada.png" height="32" class="me-2" alt="Logo">
+                    <strong class="degrade-text">HortiFresco</strong>
+                </a>
+                <div class="d-flex align-items-center">
+                    <strong class="me-2">Entregar a:</strong>
+                    <i class="fas fa-map-marker-alt me-2" style="color: #8C503A;"></i>
+                    <span>Localização Atual <strong>Loanda/PR</strong></span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="position-relative me-3" style="width: 250px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-search" style="color: #8C503A;"></i>
+                        </span>
+                        <input id="campoBusca" type="text" class="form-control border-start-0" placeholder="Procurar"
+                            oninput="filtrarSugestoes()">
+                    </div>
+                    <ul id="sugestoes" class="list-group position-absolute w-100 shadow" style="z-index: 1000;"></ul>
+                </div>
+                <div class="position-relative me-3">
+                    <a href="#" class="text-decoration-none" onclick="abrirCarrinho()">
+                        <i class="fas fa-shopping-cart fa-lg" style="color: #8C503A;"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                            0
+                        </span>
+                    </a>
+                </div>
+
+                <div id="usuarioArea" class="dropdown">
+                    <button class="btn btn-outline-warning dropdown-toggle d-flex align-items-center" type="button"
+                        id="dropdownUserButton" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="color: #8C503A; border: 1px solid #8C503A;">
+                        <i class="fas fa-user me-2" style="color: #8C503A;"></i><span id="nomeUsuario">Login</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownUserButton">
+                        <li><a class="dropdown-item" href="#" onclick="logout()">Sair</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Aba lateral do carrinho -->
+    <div id="cart-sidebar" class="cart-sidebar hidden shadow-lg">
+        <div class="p-4 d-flex flex-column h-100 bg-white">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="m-0">🛒 Seu Carrinho</h4>
+                <button onclick="fecharCarrinho()" class="btn btn-danger btn-sm">X</button>
+
+            </div>
+
+            <div id="cart-items" class="flex-grow-1 mb-3 overflow-auto" style="max-height: 300px;"></div>
+
+            <div class="mb-3">
+                <p class="mb-1"><strong>Total:</strong> R$<span id="cart-total">0.00</span></p>
+            </div>
+
+            <div class="d-flex justify-content-between gap-2">
+                <button class="btn btn-success w-100" onclick="finalizarCompra()">
+                    Finalizar compra
+                </button>
+                <button class="btn btn-outline-success w-100 mt-2" onclick="enviarCarrinhoPorWhatsapp()">
+                    Enviar pedido via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-texto">
+                <h1 class="fw-bold mb-3">Está em busca de alimentos frescos?</h1>
+                <h4 class="fw-semibold text-dark">Em poucos cliques, encontre produtos saudáveis e naturais perto de
+                    você.</h4>
+
+
+            </div>
+
+            <div class="hero-imagem">
+                <img src="img/maca.png" alt="Maça" style="max-width: 300px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="produtos">
+        <div class="produto-card">
+            <div class="produto-img-container">
+                <img src="img/salada1.jpg" alt="Salada" data-id="img-alface" data-img-editavel="true">
+                <div class="desconto" data-id="desconto-alface" data-editavel="true">15%<span>Off</span></div>
+            </div>
+            <h4 data-id="nome-alface" data-editavel="true">Alface</h4>
+            <div class="tempo" data-id="tempo-alface" data-editavel="true">6 dias restantes</div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-container">
+                <img src="img/morango.jpg" alt="Morango" data-id="img-morango" data-img-editavel="true">
+                <div class="desconto" data-id="desconto-morango" data-editavel="true">10%<span>Off</span></div>
+            </div>
+            <h4 data-id="nome-morango" data-editavel="true">Morango</h4>
+            <div class="tempo" data-id="tempo-morango" data-editavel="true">3 dias restantes</div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-container">
+                <img src="img/uva.jpg" alt="Uva" data-id="img-uva" data-img-editavel="true">
+                <div class="desconto" data-id="desconto-uva" data-editavel="true">25%<span>Off</span></div>
+            </div>
+            <h4 data-id="nome-uva" data-editavel="true">Uva</h4>
+            <div class="tempo" data-id="tempo-uva" data-editavel="true">1 dias restantes</div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-container">
+                <img src="img/uva verde.jpg" alt="Uva Verde" data-id="img-uva-verde" data-img-editavel="true">
+                <div class="desconto" data-id="desconto-uva-verde" data-editavel="true">20%<span>Off</span></div>
+            </div>
+            <h4 data-id="nome-uva-verde" data-editavel="true">Uva verde</h4>
+            <div class="tempo" data-id="tempo-uva-verde" data-editavel="true">10 dias restantes</div>
+        </div>
+    </section>
+
+
+    <section class="como-funciona">
+        <h2>Como funciona</h2>
+        <div class="passos">
+            <div class="passo">
+                <img src="img/localização.png" alt="Localização">
+                <h3>Escolha o local</h3>
+                <p>Escolha onde sua comida será entregue.</p>
+            </div>
+            <div class="passo">
+                <img src="img/menu.png" alt="Menu">
+                <h3>Escolha o pedido</h3>
+                <p>Navegue pelos cardápios e escolha sua comida favorita.</p>
+            </div>
+            <div class="passo">
+                <img src="img/pagamento.png" alt="Pagamento">
+                <h3>Pague antecipado</h3>
+                <p>É rápido, seguro e simples. Diversos métodos de pagamento.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="popular-items">
+        <h2 data-id="titulo-frutas" data-editavel="true">Frutas e legumes</h2>
+        <div id="admin-add-item-controls" style="text-align: center; margin-bottom: 20px; display: none;">
+            <button class="btn btn-primary" id="btn-add-new-item">Adicionar Novo Item</button>
+        </div>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn left">&#10094;</button>
+
+            <div class="carousel" id="carousel-items-container">
+            </div>
+
+            <button class="carousel-btn right">&#10095;</button>
+        </div>
+
+
+    </section>
+
+    <div class="modal fade" id="addNewItemModal" tabindex="-1" aria-labelledby="addNewItemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addNewItemModalLabel">Adicionar Novo Item ao Carrossel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addNewItemForm">
+                        <div class="mb-3">
+                            <label for="newItemName" class="form-label">Nome do Produto:</label>
+                            <input type="text" class="form-control" id="newItemName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newItemPrice" class="form-label">Preço (R$):</label>
+                            <input type="number" step="0.01" class="form-control" id="newItemPrice" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newItemImageFile" class="form-label">Upload de Imagem:</label>
+                            <input type="file" class="form-control" id="newItemImageFile" accept="image/*">
+                            <small class="form-text text-muted">Ou arraste e solte a imagem abaixo.</small>
+                        </div>
+                        <div class="mb-3 border border-dashed p-3 text-center" id="drop-area-new-item"
+                            style="min-height: 100px; cursor: pointer; border-color: #ccc;">
+                            <p class="mb-0">Arraste e solte a imagem aqui ou clique para selecionar</p>
+                            <img id="newItemImagePreview" src="" alt="Prévia da Imagem"
+                                style="max-width: 100%; max-height: 150px; display: none; margin-top: 10px;">
+                        </div>
+                        <button type="submit" class="btn btn-success">Adicionar Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h2>Talento Tech</h2>
+                <p>Grupo 1: Porecatu
+                </p>
+                <p class="copyright">© Copyright <strong>Rafael Tomé da Silva</strong></p>
+            </div>
+
+
+
+            <div class="footer-col">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                </div>
+                <p>Siga-nos nas redes sociais.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Modal de Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Entrar ou Criar Conta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <input id="loginUsuario" class="form-control mb-3" placeholder="Usuário">
+                    <input id="loginSenha" class="form-control mb-3" type="password" placeholder="Senha">
+                    <button class="btn btn-success w-100 mb-2" onclick="entrar()">Entrar</button>
+                    <button class="btn btn-secondary w-100" onclick="criarConta()">Criar Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addNewItemModal" tabindex="-1" aria-labelledby="addNewItemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addNewItemModalLabel">Adicionar Novo Item ao Carrossel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addNewItemForm">
+                        <div class="mb-3">
+                            <label for="newItemName" class="form-label">Nome do Produto:</label>
+                            <input type="text" class="form-control" id="newItemName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newItemPrice" class="form-label">Preço (R$):</label>
+                            <input type="number" step="0.01" class="form-control" id="newItemPrice" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newItemImage" class="form-label">URL da Imagem:</label>
+                            <input type="text" class="form-control" id="newItemImage"
+                                placeholder="Ex: img/novo-produto.jpg" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Adicionar Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
